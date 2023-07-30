@@ -24,8 +24,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-Tx-dJ6">
                                 <rect key="frame" x="16" y="59" width="361" height="759"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb6-nv-5bk">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="E1N-4g-iTd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.91764706370000004" green="0.97254902119999997" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oE-85-YRA">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="565"/>
+                                        <rect key="frame" x="0.0" y="60" width="361" height="505"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -57,6 +66,9 @@
                                         <rect key="frame" x="0.0" y="755" width="361" height="4"/>
                                     </progressView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="zb6-nv-5bk" firstAttribute="top" secondItem="cOn-Tx-dJ6" secondAttribute="top" id="n6a-YQ-5N2"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nad-hu-yX2"/>
@@ -75,6 +87,7 @@
                         <outlet property="falseButton" destination="qta-4T-dq4" id="0F4-ze-wxr"/>
                         <outlet property="progressView" destination="842-Nx-iJm" id="hhg-JW-tFQ"/>
                         <outlet property="questionText" destination="4oE-85-YRA" id="R1B-lT-YFy"/>
+                        <outlet property="scoreLabel" destination="zb6-nv-5bk" id="U2G-NJ-7fG"/>
                         <outlet property="trueButton" destination="rjM-Wf-zJk" id="UiE-22-Y8W"/>
                     </connections>
                 </viewController>
